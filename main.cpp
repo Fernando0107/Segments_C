@@ -8,7 +8,7 @@ static int temp_bss; // for bss address
 int main(int argc, char **argv)
 {
     int var_temp = 1;            // dummie var to get the stack segment address
-    int *stack_sa = &var_temp;   //get the address of the var_temp
+    int *stack_sa = &var_temp;   //get the address of the var_temp in the stack
     int *bss_a = &temp_bss;      //get the address of the bss
     int *code_sa = (int *)&main; //get the code segment address
 
